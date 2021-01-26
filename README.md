@@ -2,6 +2,18 @@
 
 Ensure you have Terraform install on your system
 
+Create a file in the root of the project called **terraform.tfvars**, add the following to the file:
+```
+project = {
+  dev = "project-name"
+}
+
+instance-type = {
+  dev = "t2.micro"
+}
+```
+(We shouldn't put a .tfvars fiel in source control hence why the .gitignore file omits it)
+
 ```
 export ENV=dev
 terraform init --backend-config=configuration/$ENV.conf
