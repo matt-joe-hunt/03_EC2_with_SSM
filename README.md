@@ -12,7 +12,9 @@ instance-type = {
   dev = "t2.micro"
 }
 ```
-(We shouldn't put a .tfvars fiel in source control hence why the .gitignore file omits it)
+(We shouldn't put a .tfvars file in source control hence why the .gitignore file omits it)
+
+In your terminal run the following commands:
 
 ```
 export ENV=dev
